@@ -32,7 +32,7 @@ $.fn.jarvisWidgets && enableJarvisWidgets && $("#widget-grid").jarvisWidgets({
     "deletePositionKey": "#deletepositionkey-options",
     "positionKeyLabel": "Reset position?",
     "sortable": sortableJarvisWidgets,
-    "buttonsHidden": !1,
+    "buttonsHidden": !1,//0:工具栏自动隐藏，鼠标经过显示;1:工具栏始终显示
     "toggleButton": !0,
     "toggleClass": "fa fa-minus | fa fa-plus",
     "toggleSpeed": 200,
@@ -52,15 +52,15 @@ $.fn.jarvisWidgets && enableJarvisWidgets && $("#widget-grid").jarvisWidgets({
     "fullscreenClass": "fa fa-expand | fa fa-compress",
     "fullscreenDiff": 3,
     "onFullscreen": function() {},
-    "customButton": !1,
-    "customClass": "folder-10 | next-10",
+    "customButton": !0,//0:启用;1：禁用
+    "customClass": "fa fa-plus",
     "customStart": function() {
         alert("Hello you, this is a custom button...")
     },
     "customEnd": function() {
-        alert("bye, till next time...")
+        alert("Hello you, this is a custom button...")
     },
-    "buttonOrder": "%refresh% %custom% %edit% %toggle% %fullscreen% %delete%",
+    "buttonOrder": "%refresh% %custom% %edit% %toggle% %fullscreen% %delete%",//工具栏按钮顺序
     "opacity": 1,
     "dragHandle": "> header",
     "placeholderClass": "jarviswidget-placeholder",
